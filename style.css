@@ -889,6 +889,7 @@ footer {
 
     nav {
         height: 40vh;
+        padding: 0 20px 0 0;
     }
 
     .logo-container {
