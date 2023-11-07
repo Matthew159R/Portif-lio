@@ -51,14 +51,14 @@ buttonDownloadCurriculum.addEventListener('click', () => {
 
 //--------Java script da sessão de skills---------
 
-const hardSkills = document.querySelectorAll('.hard-skill')
+const skill = document.querySelectorAll('.skill')
 
-hardSkills.forEach(hardSkill => {
+skill.forEach(skill => {
     let CheckingMouseOver;
 
-    hardSkill.addEventListener('mouseenter', () => {
-        const boxMoreInfo = Array.from(hardSkill.children)[1]
-        const boxMainInfo = Array.from(hardSkill.children)[0]
+    skill.addEventListener('mouseenter', () => {
+        const boxMoreInfo = Array.from(skill.children)[1]
+        const boxMainInfo = Array.from(skill.children)[0]
 
         boxMainInfo.classList.add('boxMainInfo-hover-animation')
         boxMoreInfo.classList.add('box-more-info-hover-animation')
@@ -70,10 +70,10 @@ hardSkills.forEach(hardSkill => {
         }, 300)
     })
 
-    hardSkill.addEventListener('mouseleave', () => {
+    skill.addEventListener('mouseleave', () => {
         clearTimeout(CheckingMouseOver)
-        const boxMoreInfo = Array.from(hardSkill.children)[1]
-        const boxMainInfo = Array.from(hardSkill.children)[0]
+        const boxMoreInfo = Array.from(skill.children)[1]
+        const boxMainInfo = Array.from(skill.children)[0]
 
         setTimeout(() => {
             boxMainInfo.classList.remove('boxMainInfo-hover-animation-reverse')
