@@ -110,3 +110,19 @@ projects.addEventListener('mouseout', event => {
     }
 })
 
+
+// Animação do feedback
+
+const feeback = document.querySelector('.feedback')
+
+let ok = false
+
+document.body.addEventListener('scroll', () => {
+    if (document.body.scrollTop >= 1800) {
+        feeback.classList.add('feedback-animation')
+        setTimeout(() => {
+            feeback.classList.remove('feedback-animation')
+            feeback.classList.add('feedback-animation-none')
+        }, 7000)
+    }
+})
